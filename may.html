@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Maycita❤️❤️</title>
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#ff0000,#b30000);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Corazón */
+.heart{
+    position:relative;
+    width:200px;
+    height:200px;
+    background:#ff4d6d;
+    transform:rotate(-45deg);
+    animation:latido 1s infinite;
+}
+
+.heart:before,
+.heart:after{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:#ff4d6d;
+    border-radius:50%;
+}
+
+.heart:before{
+    top:-100px;
+    left:0;
+}
+
+.heart:after{
+    left:100px;
+    top:0;
+}
+
+/* Texto */
+.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) rotate(45deg);
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    text-shadow:0 0 10px white;
+    z-index:2;
+}
+
+/* Latido */
+@keyframes latido{
+    0%{transform:rotate(-45deg) scale(1);}
+    50%{transform:rotate(-45deg) scale(1.1);}
+    100%{transform:rotate(-45deg) scale(1);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="heart">
+    <div class="text">  Te quiero mucho Maylin❤️❤️</div>
+</div>
+
+</body>
+</html>
